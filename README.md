@@ -14,6 +14,7 @@ There are three main types of approaches for mitigating catastrophic forgetting:
 
 <p align="center">
 <img src="catastrophic_forgetting_strategies.png"  alt="drawing" width="325"/>
+
 Figure from <a href="https://arxiv.org/abs/1806.08568" target="_blank">[1]</a>.
 </p>
 
