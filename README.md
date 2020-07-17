@@ -14,9 +14,9 @@ There are three main types of approaches for mitigating catastrophic forgetting:
 
 <p align="center">
 <img src="catastrophic_forgetting_strategies.png"  alt="drawing" width="325"/>
+</p>
 
 Figure from <a href="https://arxiv.org/abs/1806.08568" target="_blank">[1]</a>.
-</p>
 
 This project focuses on gradient episodic memory (GEM), shown above to contain elements of regularization and rehearsal strategies. Here, we implement GEM using a variant of the MNIST dataset in which digits are rotated by a fixed angle between 0 and 180 degrees. GEM minimizes catastrophic forgetting through use of an episodic memory used to store a subset of the observed examples from a given task. While minimizing the loss on the current task *t*, GEM treats the losses on the episodic memories of tasks *k < t* as inequality constraints, avoiding their increase but allowing their decrease <a href="https://arxiv.org/abs/1802.07569" target="_blank">[2]</a>.
 
